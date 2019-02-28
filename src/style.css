@@ -10,8 +10,9 @@ body {
   width: 100%;
   font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 9px;
-  background: rgb(249,219,61);
-  color: #222;
+  background: #7e10c3;
+  background: radial-gradient(circle, rgb(93, 16, 195) 0%, rgb(112, 92, 189) 100%);
+  color: #fff;
   margin: 0;
   padding: 0;
   overflow-y: scroll;
@@ -19,10 +20,12 @@ body {
 
 h1 {
   font-weight: normal;
-  font-size: 2.25em;
+  font-size: 3.25em;
   text-transform: uppercase;
   letter-spacing: -1px;
   text-align: center;
+  color: #68f285;
+  font-family: 'Exo 2', sans-serif;
 }
 
 h2 {
@@ -162,12 +165,12 @@ code {
 }
 
 .wrong {
-  background: rgba(236,100,75,.5);
+  background: #ff5151;
   animation: shake 0.5s cubic-bezier(.35,.05,.20,.99) both;
 }
 
 .right {
-  background: rgba(135,211,124,.5);
+  background: #68f285;
 }
 
 @keyframes shake {
@@ -189,7 +192,7 @@ code {
   font-size: 5em;
   text-align: center;
   width: 100%;
-  background: rgb(252, 235, 148);
+  background: #42227d;
   padding: 5%;
   will-change: transform;
   transform: scale(4);
@@ -294,4 +297,10 @@ code {
   body {
     overflow: hidden;
   }
+}
+
+.card {
+  box-shadow: #4f2796 1px 6px 12px 0px;
+  background-color: transparent;
+  margin-bottom: 20px;
 }
