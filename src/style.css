@@ -303,4 +303,13 @@ code {
   box-shadow: #4f2796 1px 6px 12px 0px;
   background-color: transparent;
   margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: #3c0f98 1px 10px 17px 5px;
+}
+
+.card-wrapper {
+  padding: 10px;
 }
