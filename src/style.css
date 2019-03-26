@@ -10,8 +10,8 @@ body {
   width: 100%;
   font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 9px;
-  background: #7e10c3;
-  background: radial-gradient(circle, rgb(93, 16, 195) 0%, rgb(112, 92, 189) 100%);
+  background: rgb(120,144,251);
+  background: linear-gradient(131deg, rgba(120,144,251,1) 0%, rgba(124,122,252,1) 45%, rgba(137,132,252,1) 100%);
   color: #fff;
   margin: 0;
   padding: 0;
@@ -300,14 +300,14 @@ code {
 }
 
 .card {
-  box-shadow: #4f2796 1px 6px 12px 0px;
+  box-shadow: #706ce6 1px 6px 12px 0px;
   background-color: transparent;
   margin-bottom: 20px;
   cursor: pointer;
 }
 
 .card:hover {
-  box-shadow: #3c0f98 1px 10px 17px 5px;
+  box-shadow: #6360e4 1px 10px 17px 5px;
 }
 
 .card-wrapper {
