@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
-	entry: __dirname + '/src/main.js',
+	entry: './src/main.js',
 	output: {
 		path: __dirname + '/dist',
 		filename: 'bundle.js'
@@ -28,7 +28,7 @@ module.exports = {
 		new ExtractTextPlugin('style.css'),
 		new HtmlWebpackPlugin({
 			inject: true,
-			template: __dirname + '/src/index.html',
+			template: './src/index.html',
 			minify: {
 				removeComments: true,
 				collapseWhitespace: true,
