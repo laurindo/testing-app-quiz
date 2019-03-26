@@ -4,8 +4,9 @@
   "description": "A JavaScript quiz built with React.",
   "main": "main.js",
   "scripts": {
-    "start": "webpack-dev-server --mode development --config webpack.config.dev.js --open",
-    "build": "webpack --mode production --config webpack.config.prod.js --progress"
+    "start": "webpack --mode production --config webpack.config.prod.js --progress",
+    "build": "webpack --mode production --config webpack.config.prod.js --progress",
+    "dev": "webpack-dev-server --mode development --config webpack.config.dev.js --open"
   },
   "repository": "davidrayoussef/react-quiz",
   "homepage": "https://github.com/davidrayoussef/react-quiz",
