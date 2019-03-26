@@ -28,7 +28,7 @@ module.exports = {
 		new ExtractTextPlugin('style.css'),
 		new HtmlWebpackPlugin({
 			inject: true,
-			template: './src/index.html',
+			template: __dirname + '/src/index.html',
 			minify: {
 				removeComments: true,
 				collapseWhitespace: true,
