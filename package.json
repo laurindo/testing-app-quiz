@@ -4,7 +4,7 @@
   "description": "A JavaScript quiz built with React.",
   "main": "main.js",
   "scripts": {
-    "start": "webpack --mode production --config webpack.config.prod.js --progress",
+    "start": "node index.js",
     "build": "webpack --mode production --config webpack.config.prod.js --progress",
     "dev": "webpack-dev-server --mode development --config webpack.config.dev.js --open"
   },
