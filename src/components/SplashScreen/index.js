@@ -1,7 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Redirect } from 'react-router-dom';
 
 class SplashScreen extends React.Component {
+  state = {
+    redirect: false
+  };
+
   componentDidMount() {
     anime.timeline({ loop: false })
       .add({
@@ -49,30 +53,33 @@ class SplashScreen extends React.Component {
         easing: "linear",
         loop: true
       });
+
+      this.goRedirect();
+  }
+
+  goRedirect() {
+    setTimeout(() => {
+      this.setState({ redirect: true });
+    }, 5000);
   }
 
   render() {
+    const { redirect } = this.state;
+    if (redirect) {
+      return <Redirect to='/home'/>;
+    }
+
     return (
       <div>
         <h1 className="ml8">
           <span className="letters-container">
             <span className="letters letters-left">Odonto App</span>
             <span className="letters bang">&nbsp;<img src="https://res.cloudinary.com/luneswallet/image/upload/c_thumb,w_50,g_face/v1553708640/teeth_o6qqgq.png" /></span>
-
-            <div className="area-start-button">
-              <Link className="start-button" to="/home">Começar</Link>
-            </div>
-
           </span>
           <span className="circle circle-white"></span>
           <span className="circle circle-dark"></span>
           <span className="circle circle-container"><span className="circle circle-dark-dashed"></span></span>
-
-
-
         </h1>
-
-
       </div>
     );
   }

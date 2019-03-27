@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Card from './Card/Card';
+import { MENU_DATA } from '../data/menu-data';
 
 class App extends React.Component {
   componentDidMount() {
@@ -54,9 +55,9 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="header">
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
-            <a className="navbar-brand" href="#">Navbar</a>
+            <a className="navbar-brand" href="#">Odonto App</a>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>
@@ -72,17 +73,7 @@ class App extends React.Component {
             </div>
         </nav>
 
-        <h1 className="ml8">
-          <span className="letters-container">
-            <span className="letters letters-left">Hi</span>
-            <span className="letters bang">!</span>
-          </span>
-          <span className="circle circle-white"></span>
-          <span className="circle circle-dark"></span>
-          <span className="circle circle-container"><span className="circle circle-dark-dashed"></span></span>
-        </h1>
-
-        <Card items={[1,2,3,4,5]} />
+        <Card items={MENU_DATA} />
       </div>
     );
   }

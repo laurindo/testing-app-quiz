@@ -6,7 +6,7 @@ const Card = ({ items }) => (
     <div className='card-wrapper row'>
         {
             items.map((item, index) => (
-                <CardItem key={index} />
+                <CardItem key={index} item={item} />
             ))
         }
     </div>

@@ -399,3 +399,13 @@ h1.ml8 {
 .area-start-button .start-button:hover {
   box-shadow: #6c6ae4 1px 9px 9px 0px;
 }
+
+.btn-primary {
+  background-color: #4cb5ff;
+  border-color: #4cb5ff;
+}
+
+.header nav {
+  box-shadow: #6a67fb 0px 4px 10px;
+  background-color: #827efc!important;
+}
