@@ -1,10 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Card from './Card/Card';
 
-class App extends React.Component {
+class SplashScreen extends React.Component {
   componentDidMount() {
-    anime.timeline({ loop: true })
+    anime.timeline({ loop: false })
       .add({
         targets: '.ml8 .circle-white',
         scale: [0, 3],
@@ -37,7 +36,7 @@ class App extends React.Component {
         offset: '-=1000'
       }).add({
         targets: '.ml8',
-        opacity: 0,
+        opacity: 1,
         duration: 1000,
         easing: "easeOutExpo",
         delay: 1400
@@ -55,37 +54,28 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
-            <a className="navbar-brand" href="#">Navbar</a>
-            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className="collapse navbar-collapse" id="navbarNav">
-              <ul className="navbar-nav">
-                <li className="nav-item">
-                  <Link className="nav-link" to="/">Home</Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link" to="/quiz">Quiz</Link>
-                </li>
-              </ul>
-            </div>
-        </nav>
-
         <h1 className="ml8">
           <span className="letters-container">
-            <span className="letters letters-left">Hi</span>
-            <span className="letters bang">!</span>
+            <span className="letters letters-left">Odonto App</span>
+            <span className="letters bang">&nbsp;<img src="https://res.cloudinary.com/luneswallet/image/upload/c_thumb,w_50,g_face/v1553708640/teeth_o6qqgq.png" /></span>
+
+            <div className="area-start-button">
+              <Link className="start-button" to="/home">Começar</Link>
+            </div>
+
           </span>
           <span className="circle circle-white"></span>
           <span className="circle circle-dark"></span>
           <span className="circle circle-container"><span className="circle circle-dark-dashed"></span></span>
+
+
+
         </h1>
 
-        <Card items={[1,2,3,4,5]} />
+
       </div>
     );
   }
 }
 
-export default App;
+export default SplashScreen;
