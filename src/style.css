@@ -314,6 +314,10 @@ code {
   padding: 10px;
 }
 
+.card-text {
+  margin: 50px 0;
+}
+
 h1.ml8 {
   font-weight: 900;
   font-size: 4.5em;
@@ -408,4 +412,20 @@ h1.ml8 {
 .header nav {
   box-shadow: #6a67fb 0px 4px 10px;
   background-color: #827efc!important;
+}
+
+.navbar-light .navbar-brand {
+  color: rgba(249, 249, 249, 0.9);
+}
+
+.navbar-light .navbar-brand:hover {
+  color: rgb(229, 229, 247);
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgb(236, 236, 236);
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: rgb(53, 53, 160);
 }
