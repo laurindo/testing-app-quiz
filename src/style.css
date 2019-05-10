@@ -342,7 +342,7 @@ code {
 h1.ml8 {
   font-weight: 900;
   font-size: 4.5em;
-  color: #fff;
+  color: #3056e8;
   width: 3em;
   height: 3em;
 }
@@ -391,7 +391,7 @@ h1.ml8 {
 .ml8 .circle-dark {
   width: 2.2em;
   height: 2.2em;
-  background-color: #6ab1e4;
+  background-color: #eaedfb;
   border-radius: 3em;
   z-index: 1;
 }
