@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import CardItem from './CardItem';
 
 const Card = ({ items }) => (
-    <div className='card-wrapper row'>
+    <div className='row'>
         {
             items.map((item, index) => (
                 <CardItem key={index} item={item} />

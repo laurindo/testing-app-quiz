@@ -11,7 +11,6 @@ body {
   font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 9px;
   background: rgb(249, 249, 249);
-  background: linear-gradient(131deg, rgb(255, 255, 255) 0%, rgb(226, 226, 234) 45%, rgb(255, 255, 255) 100%);
   color: #fff;
   margin: 0;
   padding: 0;
@@ -299,7 +298,21 @@ code {
   }
 }
 
+.card-img-top {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
 .card {
+  background-color: transparent;
+  border: 0;
+  margin-top: 50px;
+  color: #111;
+  text-align: center;
+}
+
+/*.card {
   box-shadow: #fff 1px 6px 12px 0px;
   background-color: #fbfbfb;
   margin-bottom: 20px;
@@ -324,7 +337,7 @@ code {
 
 .card-body .card-text {
   color: #ccc;
-}
+}*/
 
 h1.ml8 {
   font-weight: 900;
@@ -418,8 +431,8 @@ h1.ml8 {
 }
 
 .header nav {
-  box-shadow: #67bcfb 0px 4px 10px;
-  background-color: #3ca7f7!important;
+  box-shadow: #6793fb 0px 4px 10px;
+  background-color: #3c6df7!important;
 }
 
 .navbar-light .navbar-brand {
