@@ -28,6 +28,7 @@ import App from './components/App';
 import SplashScreen from './components/SplashScreen';
 import Child from './components/Child';
 import './style.css';
+import './manifest.json';
 
 render(
   <HashRouter>
