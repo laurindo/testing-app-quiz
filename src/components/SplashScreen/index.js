@@ -59,7 +59,7 @@ class SplashScreen extends React.Component {
 
   goRedirect() {
     setTimeout(() => {
-      this.setState({ redirect: false });
+      this.setState({ redirect: true });
     }, 5000);
   }
 
