@@ -92,3 +92,7 @@
 .slick-dots li.slick-active button:before {
   color: #fff;
 }
+
+.slick-next:before, .slick-prev:before {
+  color: #2057f3;
+}

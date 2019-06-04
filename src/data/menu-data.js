@@ -1,5 +1,5 @@
 export const HOME_CARDS = [{
-  image: 'https://res.cloudinary.com/luneswallet/image/upload/v1553786617/odonto/toothpaste-3067569_960_720.jpg',
+  image: 'https://res.cloudinary.com/luneswallet/image/upload/v1559610069/odonto/preparo-01.jpg',
   title: 'Preparo',
   description: '',
   link: '/preparo'
@@ -31,12 +31,12 @@ export const HOME_CARDS = [{
 }];
 
 export const PREPARO_CARDS = [{
-  image: 'https://res.cloudinary.com/luneswallet/image/upload/v1553718973/odonto/endodontia--posunip_10368.jpg',
+  image: 'https://res.cloudinary.com/luneswallet/image/upload/v1559610069/odonto/preparo-01.jpg',
   title: 'Anterior',
   description: '',
   link: '/preparo/anterior'
 }, {
-  image: 'https://res.cloudinary.com/luneswallet/image/upload/v1553718973/odonto/endodontia--posunip_10368.jpg',
+  image: 'https://res.cloudinary.com/luneswallet/image/upload/v1559610241/odonto/preparo-provisorio-01.jpg',
   title: 'Posterior',
   description: '',
   link: '/preparo/posterior'
